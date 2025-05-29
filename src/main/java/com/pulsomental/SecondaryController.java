@@ -2,9 +2,13 @@ package com.pulsomental;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class SecondaryController {
+    @FXML
+    private Button secondaryButton;
+
     @FXML
     private Label label;
 
