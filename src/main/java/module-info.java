@@ -1,8 +1,9 @@
 module com.pulsomental {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.base;
 
-    opens com.pulsomental to javafx.fxml;
+    opens com.pulsomental.controllers to javafx.fxml;
 
     exports com.pulsomental;
 
