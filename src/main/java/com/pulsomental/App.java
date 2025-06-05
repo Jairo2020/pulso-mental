@@ -15,15 +15,15 @@ public class App extends Application {
 
     private static Scene scene;
     private static final String FXML_PATH = "fxml/";
-    private static final String CSS_PATH = "styles/";
     private static String title = "Pulso Mental";
+    private static final int WIDTH = 640; // Ancho de la ventana
+    private static final int HEIGHT = 620; // Alto de la ventana
 
     @Override
     public void start(Stage stage) throws IOException {
         try {
-            scene = new Scene(loadFXML("start"), 640, 580);
+            scene = new Scene(loadFXML("start"), WIDTH, HEIGHT);
 
-            scene.getStylesheets().add(App.class.getResource(CSS_PATH + "styles.css").toExternalForm());
             stage.setScene(scene);
             stage.setTitle(title);
             stage.setResizable(false);
