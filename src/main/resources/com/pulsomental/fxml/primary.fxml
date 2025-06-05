@@ -13,32 +13,32 @@
 
 <VBox fx:id="primaryPanel" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pulsomental.controllers.PrimaryController">
   <children>
-    <Label fx:id="modeTitle" text="Mode Memoria" />
-    <Separator prefWidth="200.0" />
-    <GridPane prefHeight="400.0" prefWidth="400.0">
+    <Label fx:id="modeTitle" text="Mode Memoria"/>
+    <Separator prefWidth="200.0"/>
+    <GridPane fx:id="contentGame" maxHeight="400.0" maxWidth="400.0" prefHeight="400.0" prefWidth="400.0" styleClass="contentGame">
       <columnConstraints>
-        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
       </columnConstraints>
       <rowConstraints>
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
       </rowConstraints>
       <children>
-        <Circle fx:id="c1" fill="DODGERBLUE" radius="22.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
-        <Circle fill="DODGERBLUE" radius="22.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-        <Circle fill="DODGERBLUE" radius="22.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
-        <Circle fill="DODGERBLUE" radius="22.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <ImageView fx:id="characterImg" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Circle fx:id="c1" fill="DODGERBLUE" radius="22.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1"/>
+        <Circle fill="DODGERBLUE" radius="22.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <Circle fill="DODGERBLUE" radius="22.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1"/>
+        <Circle fill="DODGERBLUE" radius="22.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <ImageView fx:id="characterImg" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
       </children>
     </GridPane>
-    <Button fx:id="startButton" onAction="#switchToStart" text="Ir a inicio" />
-    <Button fx:id="reset" mnemonicParsing="false" text="Resetear" />
-    <Button fx:id="simulateOver" mnemonicParsing="false" text="Simular perdidad" />
+    <Button fx:id="startButton" onAction="#switchToStart" text="Ir a inicio"/>
+    <Button fx:id="reset" mnemonicParsing="false" text="Resetear"/>
+    <Button fx:id="simulateOver" mnemonicParsing="false" text="Simular perdidad"/>
   </children>
   <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
   </padding>
 </VBox>

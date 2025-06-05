@@ -4,11 +4,42 @@ public class Character {
     private String name;
     private String description;
     private String imageUrl;
+    private double x;
+    private Integer steps = 10;
 
-    public Character(String name, String description, String imageUrl) {
+    private double y;
+
+    public Character(String name, String description, String imageUrl, double x, double y) {
         this.name = name;
         this.description = description;
         this.imageUrl = imageUrl;
+        this.x = x;
+        this.y = y;
+    }
+
+    // #region Getters and Setters
+    public Integer getSteps() {
+        return steps;
+    }
+
+    public void setSteps(Integer speed) {
+        this.steps = speed;
+    }
+
+    public double getX() {
+        return x;
+    }
+
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
+    public void setY(double y) {
+        this.y = y;
     }
 
     public String getName() {
@@ -34,4 +65,6 @@ public class Character {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
+
+    // #endregion
 }
